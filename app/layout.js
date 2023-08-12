@@ -1,4 +1,4 @@
-import { Footer, Navbar } from './components'
+import { FloatingIcon, Footer, Navbar } from './components'
 import './globals.css'
 import { Exo_2 } from 'next/font/google'
 
@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true} className={`${exo.variable} font-sans`}>
       <Navbar />
           {children}
+      <FloatingIcon />
       <Footer />    
       </body>
     </html>
